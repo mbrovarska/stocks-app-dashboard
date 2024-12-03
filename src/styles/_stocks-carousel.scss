@@ -1,0 +1,54 @@
+@import "./variables.scss";
+
+.stocks-carousel-container {
+  margin-top: 20px;
+  background-color: $background-color;
+  border-radius: $border-radius;
+  padding-top: 12px;
+  padding-left: 45px;
+  .carousel-element-container {
+    max-width: 230px;
+    height: 65%;
+    background-color: $info-color;
+    border-radius: $border-radius;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+    }
+    @media (min-width: 462px) {
+      max-width: 155px;
+    }
+    @media (min-width: 550px) {
+      max-width: 180px;
+    }
+    @media (min-width: 900px) {
+      height: 75%;
+    }
+    @media (min-width: 1025px) {
+      max-width: 180px;
+    }
+    @media (min-width: 1500px) {
+      max-width: 190px;
+    }
+    @media (min-width: 1800px) {
+      max-width: 230px;
+    }
+  }
+  @media (min-width: 450px) {
+    margin-top: 30px;
+  }
+  @media (min-width: 800px) {
+    margin-top: 40px;
+  }
+  @media (min-width: 900px) {
+    padding: 12px;
+  }
+}

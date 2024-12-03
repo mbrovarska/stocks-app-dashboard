@@ -1,0 +1,76 @@
+@import "./variables.scss";
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Objective", "Arial";
+  background-color: #e9e1ff;
+  .page-content-container {
+    padding-left: 32px;
+    padding-right: 32px;
+    .row {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+    }
+    .loading-message-container {
+      display: flex;
+      justify-content: center;
+    }
+    .text {
+      color: $text-color;
+    }
+    span {
+      font-size: $text-size;
+      font-weight: $text-weight;
+    }
+    .bold-text {
+      font-weight: $bold-text-weight;
+    }
+    .card-container {
+      background-color: $background-color;
+      border-radius: $border-radius;
+      width: 100%;
+      padding: 20px 12px;
+
+      .chart-title {
+        color: red;
+      }
+    }
+    .link {
+      color: #a6f7e2;
+    }
+    .info-row {
+      padding-top: 10px;
+    }
+
+    @media (min-width: 600px) {
+      .card-container {
+        width: 100%;
+      }
+      .fixed-container {
+        max-height: 210px;
+      }
+    }
+    @media (min-width: 800px) {
+      .row {
+        flex-direction: row;
+        justify-content: center;
+      }
+      .long-row {
+        .card-container {
+          width: 30%;
+        }
+      }
+    }
+
+    @media (min-width: 1230px) {
+      .long-row {
+        .card-container {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

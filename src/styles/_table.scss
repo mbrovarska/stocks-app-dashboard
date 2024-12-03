@@ -1,0 +1,16 @@
+.table-container {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+}
+
+.rec-container {
+  margin-top: 10px;
+  .rec {
+    display: flex;
+    span {
+      font-size: 12px;
+      padding: 10px;
+    }
+  }
+}

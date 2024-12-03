@@ -1,0 +1,13 @@
+.selector-container {
+  display: flex;
+  gap: 10%;
+  .label {
+    font-size: 14px;
+  }
+}
+
+.social-media-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: $text-size;
+}
